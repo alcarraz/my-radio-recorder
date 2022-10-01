@@ -29,4 +29,4 @@ curl -s  $url --retry 10 --retry-max-time 60 --max-time $length >> $file
 Pretty soon, just letting run `curl` for the duration of the show proved not to be good enough, if for some reason, the `curl` program hangs, the rest of the program isn't recorded.
 
 So I ended up with the following script: 
-https://github.com/alcarraz/my-radio-recorder/blob/xxxxx/record-stream
+https://github.com/alcarraz/my-radio-recorder/blob/3a815c4b06550e34109982fc23d7d513af4e9c4d/record-stream
