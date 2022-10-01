@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# URL of the stream
+url=$1
+
+# How long to record in seconds
+length=$2
+
+# Where to store the recording
+file=$3
+
+# Calculate end time.
+end=$(( $(date +%s) + length))
+
+# While end time is not reached
+while (( $(date +%s) < end )); do 
+	echo "starting to record"
+	curl -s  $url --retry 10 --retry-max-time 60 --max-time $(( fin - $(date +%s) )) >> $file & pid=$!
+	sleep 5 # initial delay to let curl start recording
+	#check curl is writing to file, i.e. stream didn't block
+	while (( $(date +%s) - $(date +%s -r $file) < 5 )); do 
+		sleep 5; 
+	done
+
+	echo "it seems curl blocked, killing it to restart it"
+	kill $pid
+done	
