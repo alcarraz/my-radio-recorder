@@ -4,9 +4,9 @@ Some years ago, when I moved from my beloved country Uruguay, I wanted to listen
 I chose a show called **No toquen nada**, at first I listened to it as a podcast, but pretty soon I started to want to hear it in real-time. The thing is, my OCD wouldn't allow me not to start listening from the beginning. And it started too early in my time zone.
 
 ## What I want
-Even if I wake up early, I want to be able to pause it at any time and retake it at a faster pace, to synchronize myself afterward. But also I want to be able to listen to it after it started, and then listen at a fast pace, and obviously fast forward the commercial breaks, to synchronize with it.
+Even if I wake up early, I want to be able to pause it at any time and retake it at a faster pace, to synchronize myself afterward. But also I want to be able to listen to it after it started, and then listen at a fast pace, and obviously fast- forward the commercial breaks, to synchronize with it.
 
-Also, it would be great to be able to perform all of those in any device, with access to the local network of course. I don't have a server on the cloud or with public IP.
+Also, it would be great to be able to perform all of those on any device, with access to the local network of course. I don't have a server on the cloud or with public IP.
 
 ## What I've done so far
 
@@ -33,9 +33,9 @@ https://github.com/alcarraz/my-radio-recorder/blob/3a815c4b06550e34109982fc23d7d
 
 ## What I'm missing
 
-With [`smplayer`](https://www.smplayer.info/) I am able to almost do what I want, I can listen at some multiplier velocity, but when it reaches the end I have to manually set the velocity to `1x`. But this only works in the PC, I couldn't find an app for my cellphone that can do that. VLC stops at some point when it reaches the size the file had when I opened it.
+With [`smplayer`](https://www.smplayer.info/) I am able to almost do what I want, I can listen at some multiplier velocity, but when it reaches the end I have to manually set the velocity at `1x`. But this only works on the PC, I couldn't find an app for my cellphone that can do that. VLC stops at some point when it reaches the size the file had when I opened it.
 
-So, I believe I'll have to write my own app, or a local web server with a basic UI that allow me to do what I want.
+What I achieved so far is a good enough solution for me, with so little effort. But since now I have the time I can explore more sophisticated tools, including writing my own, for example my own app or a local web server with a basic UI that allows me to do what I want.
 
 If you reached this point, and you have a need like mine, I hope this basic approach can be of some use to you. And if you know something that can resolve what is pending for my use case, please point me to some app or code I can use to build on top. I would really appreciate it.
 
