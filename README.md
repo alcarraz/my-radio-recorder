@@ -29,4 +29,13 @@ curl -s  $url --retry 10 --retry-max-time 60 --max-time $length >> $file
 Pretty soon, just letting run `curl` for the duration of the show proved not to be good enough, if for some reason, the `curl` program hangs, the rest of the program isn't recorded.
 
 So I ended up with the following script: 
-https://github.com/alcarraz/my-radio-recorder/blob/3a815c4b06550e34109982fc23d7d513af4e9c4d/record-stream#L1-L27
+https://github.com/alcarraz/my-radio-recorder/blob/3a815c4b06550e34109982fc23d7d513af4e9c4d/record-stream#L12-L27
+
+## What I'm missing
+
+With [`smplayer`](https://www.smplayer.info/) I am able to almost do what I want, I can listen at some multiplier velocity, but when it reaches the end I have to manually set the velocity to `1x`. But this only works in the PC, I couldn't find an app for my cellphone that can do that. VLC stops at some point when it reaches the size the file had when I opened it.
+
+So, I believe I'll have to write my own app, or a local web server with a basic UI that allow me to do what I want.
+
+If you reached this point, and you have a need like mine, I hope this basic approach can be of some use to you. And if you know something that can resolve what is pending for my use case, please point me to some app or code I can use to build on top. I would really appreciate it.
+
